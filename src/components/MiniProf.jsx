@@ -5,7 +5,7 @@ import React from 'react'
 export default function MiniProf() {
   const { data: session } = useSession();
   return (
-      <div className="flex items-center justify-between mt-14 ml-10">
+      <div className="flex items-center justify-between mt-14 ml-10 w-full">
         <img
           src={session?.user?.image || "/assets/800px-Instagram_logo_2016.webp"}
           alt="user prof"
@@ -21,7 +21,7 @@ export default function MiniProf() {
         
         <button className="text-blue-500 text-sm font-semibold " onClick={signOut}>Sign Out</button>
         ) : (
-         <button className="text-blue-500 text-sm font-semibold" onClick={signIn}>Sign In</button>)}
+         <button className="text-blue-500 text-sm font-semibold" onClick={signIn}>Log In</button>)}
 
       </div>
   );
